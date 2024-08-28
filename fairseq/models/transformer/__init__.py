@@ -27,6 +27,7 @@ from .transformer_legacy import (
 from .transformer_base import TransformerModelBase, Embedding
 from .transformer_prompt import TransformerModelPrompt
 
+
 __all__ = [
     "TransformerModelBase",
     "TransformerModelPrompt",

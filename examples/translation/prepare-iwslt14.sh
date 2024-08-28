@@ -77,7 +77,7 @@ for l in $src $tgt; do
         sed -e 's/<seg id="[0-9]*">\s*//g' | \
         sed -e 's/\s*<\/seg>\s*//g' | \
         sed -e "s/\’/\'/g" | \
-    #perl $TOKENIZER -threads 8 -l $l | \
+    perl $TOKENIZER -threads 8 -l $l | \
     perl $LC > $f
     echo ""
     done
